@@ -457,6 +457,14 @@ button {
   cursor: default !important;
 }
 
+/* Step 1: Define the Amiri-Regular font */
+@font-face {
+  font-family: 'Amiri';
+  src: url('./assets/Amiri-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 }
 .tooltip {
   position: fixed;
@@ -469,5 +477,6 @@ button {
   word-break: break-word;
   max-width: calc(100vw - 20px);
   font-size: var(--tooltip-font-size, 12px);
+  font-family: 'Amiri', sans-serif; /* Apply Amiri font */
   transition: opacity 0.3s ease-in-out;
 }
